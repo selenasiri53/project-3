@@ -22,22 +22,6 @@ export default {
       number: 0,
     };
   },
-  // computed: {
-  //     if (this.number < 37) {
-  //       return 'Not there yet!';
-  //     } else if (this.number > 37) {
-  //       return 'Too much!';
-  //     } else {
-  //       return this.number;
-  //     }
-  // },
-  // watch: {
-  //   result(value, oldValue) {
-  //     setTimeout(() => {
-  //       this.number = 0;
-  //     }, 5000);
-  //   },
-  // },
   methods: {
     add(num) {
       this.number = this.number + num;
@@ -46,13 +30,21 @@ export default {
 };
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style src="./styles.css" />
+
+<!-- computed: {
+      if (this.number < 37) {
+        return 'Not there yet!';
+      } else if (this.number > 37) {
+        return 'Too much!';
+      } else {
+        return this.number;
+      }
+  },
+  watch: {
+    result(value, oldValue) {
+      setTimeout(() => {
+        this.number = 0;
+      }, 5000);
+    },
+  },  -->
